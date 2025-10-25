@@ -3,7 +3,6 @@ require_dependency 'issue'
 module RedmineStatusHistory
   module Patches
     module IssuePatch
-      unloadable
       def self.included(base)
         base.send(:include, InstanceMethods)
         base.class_eval do         
